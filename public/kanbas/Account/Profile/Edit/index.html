@@ -1,0 +1,65 @@
+<!-- In /public/Kanbas/ Account/Profile/Edit/index.html, implement the form shown here on the right. In the same directory, 
+in /public/Kanbas/Account/Profile/Edit/screen.html, combine the form in index.html with the Kanbas Navigation and Account 
+Navigation to create the Edit Profile screen. Clicking the Edit Profile button should navigate to Edit/screen.html. 
+Clicking Save Profile or Cancel Editing navigates back to Profile/screen.html. Use HTML tables to layout the columns as shown. 
+Use HTML lists and anchors to render the navigation links as shown. Only the links Account, 
+Profile, Courses, Home, Assignments, and Grades need to work. Configure other links with  href="#"  for now, 
+since we don't yet care where they navigate to. Feel free to use your own username, first name, last name, contact, 
+biography, title, URL, etc. -->
+<html>
+    <head><title>Edit Profile</title></head>
+    <body>
+        <h1>Nick Kosko</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="nameInput">Name:*</label>
+                        <input type="text" placeholder="name" id="nameInput">
+                    </td>
+                    <td>
+                        <label for="pronounInpu">Pronouns:</label>
+                        <input type="text" placeholder="pronouns" id="pronounInput">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Contact</h2>
+        No registered devices, you can add some on the <a href="#">settings</a> page.
+
+        <h2>Contact</h2>
+        No registered devices, you can add some on the <a href="#">settings</a> page.
+
+        <h2>Biography</h2>
+        Student, soccer player, reader, movie enthusiast, other things
+        <br/>
+        <textarea cols="15" rows="2"></textarea>
+
+        <h2>Links</h2>
+        <ul>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+
+        <table>
+            <tr>
+                <td>Title</td>
+                <td>  </td>
+                <td>URL</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><input type=text></td>
+                <td>-></td>
+                <td><input type="text"></td>
+                <td><a href="#">Remove</a></td>
+            </tr>
+        </table>
+
+        <button>Add another link</button>
+        <button>Cancel</button>
+        <button>Save Profile</button>
+        <button>Edit Profile</button>
+        <button>Cancel Editing</button>
+    </body>
+</html>
