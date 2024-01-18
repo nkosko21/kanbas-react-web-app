@@ -1,0 +1,148 @@
+<html>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><a href="/Kanbas/Account/Navigation/index.html">
+                               Account</a></li>
+                            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+                            </li>
+                            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                            </li>
+                            <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
+                            <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
+                            <li><a href="/Kanbas/History/index.html">History</a></li>
+                            <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
+                            <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
+                            <li><a href="/Kanbas/Help/index.html">Help</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                              <a href="/Kanbas/Courses/Home/screen.html">
+                                Home</a></li>
+                            <li><a href="/Kanbas/Courses/Modules/screen.html">
+                                Modules</a></li>
+                            <li><a href="/Kanbas/Courses/Piazza/index.html">
+                                Piazza</a></li>
+                            <li><a href="/Kanbas/Courses/Grades/screen.html">
+                                Grades</a></li>
+                            <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                                Assignments</a></li>
+                            <li><a href="/Kanbas/Quizzes/index.html">Quizzes</a></li>
+                            <li><a href="/Kanbas/Grades/index.html">Grades</a></li>
+                            <li><a href="/Kanbas/People/index.html">People</a></li>
+                            <li><a href="/Kanbas/Panopto_Video/index.html">Panopto Video</a></li>
+                            <li><a href="/Kanbas/Discussions/index.html">Discussions</a></li>
+                            <li><a href="/Kanbas/Announcements/index.html">Announcements</a></li>
+                            <li><a href="/Kanbas/Pages/index.html">Pages</a></li>
+                            <li><a href="/Kanbas/Files/index.html">Files</a></li>
+                            <li><a href="/Kanbas/Rubrics/index.html">Rubrics</a></li>
+                            <li><a href="/Kanbas/Outcomes/index.html">Outcomes</a></li>
+                            <li><a href="/Kanbas/Collaborations/index.html">Collaborations</a></li>
+                            <li><a href="/Kanbas/Syllabus/index.html">Syllabus</a></li>
+                            <li><a href="/Kanbas/Settings/index.html">Settings</a></li>
+                          </ul>
+                          
+                    </td>
+                    <td>
+                        <select>
+                            <option>Edit</option>
+                            <option>Speed Grader</option>
+                            <option>Duplicate</option>
+                            <option>Delete</option>
+                            <option>Move To...</option>
+                            <option>Send To...</option>
+                            <option>Copy To...</option>
+                            <option>Share To Commons</option>
+                        </select>
+
+                        <h3>Assignment Name</h3>
+                        <input type="text" placeholder="Assignment Name">
+                        <br/>
+                        <br/>
+                        <textarea cols="15" rows="2"></textarea>
+                        <br/>
+                        <br/>
+                        <label for="pointInput">Points</label>
+                        <br/>
+                        <input type="number" id="points">
+                        <br/>
+                        <br/>
+                        <label for="assignmentGroup">Assignment Group</label>
+                        <br/>
+                        <select id="assignmentGroup">
+                            <option>ASSIGNMENTS</option>
+                        </select>
+                        <br/>
+                        <br/>
+                        <label for="displayGradesAs">Display Grades As</label>
+                        <br/>
+                        <select id="displayGradesAs">
+                            <option>Percentage</option>
+                            <option>Letter</option>
+                        </select>
+                        <br/>
+                        <br/>
+                        <label for="submissionType">Submission Type</label>
+                        <br/>
+                        <select id="submissionType">
+                            <option>Online</option>
+                            <option>In Person</option>
+                        </select>
+                        <br/>
+                        <br/>
+                        Online Entry Options
+                        <br/>
+                        <input type="radio" value="Text Entry"
+                            name="online-entry-option" id="textEntry"/>
+                        <label for="onlineEntryOptions">Online Entry Options</label>
+                        <br/>
+                        <input type="radio" value="Website URL"
+                            name="online-entry-option" id="websiteURL"/>
+                        <label for="websiteURL">Website URL</label>
+                        <br/>
+                        <input type="radio" value="Media Recordings"
+                            name="online-entry-option" id="mediaRecordings"/>
+                        <label for="mediaRecordings">Media Recordings</label>
+                        <br/>
+                        <input type="radio" value="Student Annotation"
+                            name="online-entry-option" id="studentAnnotations"/>
+                        <label for="studentAnnotations">Student Annotation</label>
+                        <br/>
+                        <input type="radio" value="File Uploads"
+                            name="online-entry-option" id="fileUploads"/>
+                        <label for="fileUploads">File Uploads</label>
+                        <br/>
+                        <br/>
+                        <label for="assignTo">Assign To</label>
+                        <br/>
+                        <input type="text" id="assignTo">
+                        <br/>
+                        <br/>
+                        <label for="dueDate">Due</label>
+                        <br/>
+                        <input type="date" id="dueDate">
+                        <br/>
+                        <br/>
+                        <label for="availibleFrom">Availible From</label>
+                        <br/>
+                        <input type="date" id="availibleFrom">
+                        <br/>
+                        <br/>
+                        <label for="until">Until</label>
+                        <br/>
+                        <input type="date" id="until">
+                        <br/>
+                        <br/>
+                        <button type="button" onclick="window.location.href='../'">Cancel</button>
+                        <button type="button"  onclick="window.location.href='../'">Save</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
