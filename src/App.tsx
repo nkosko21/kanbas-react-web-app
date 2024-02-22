@@ -6,16 +6,18 @@ import HelloWorld from './Labs/a3/HelloWorld';
 import Kanbas from './Kanbas';
 import { HashRouter } from 'react-router-dom';
 import {Routes, Route, Navigate} from "react-router";
+import Dashboard from './Kanbas/Dashboard';
 
 function App() {
   return (
     <HashRouter>
       <div>
         <Routes>
-          <Route path="/"       element={<Navigate to="/Labs"/>}/>
+          <Route path="/"       element={<Navigate to="/Labs"/>} />
           <Route path="/Labs/*" element={<Labs />} />
           <Route path="/Kanbas" element={<Kanbas />} />
           <Route path="/Hello"  element={<HelloWorld />} />
+          <Route path="/Kanbas/Dashboard" element={<Dashboard />} />
         </Routes>
       </div>
     </HashRouter>

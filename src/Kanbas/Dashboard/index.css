@@ -1,0 +1,44 @@
+.course-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.course-card {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.course-card-info-section {
+    background-color: lightblue;
+    padding-left: 10px;
+}
+
+.course-card-info-section-id {
+    margin: 0px;
+    font-size: small;
+    font-weight: 700;
+    color: black;
+}
+
+.course-card-info-section-dates {
+    font-size: small;
+}
+
+.course-card-info-section h4 {
+    margin: 0px;
+    font-weight: 250;
+    color: gray;
+}
+
+.edit-button {
+    margin-bottom: 7px;
+    cursor: pointer;
+}

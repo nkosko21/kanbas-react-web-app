@@ -1,0 +1,8 @@
+.course-nav-item {
+    color: red;
+}
+
+.course-nav-item-active {
+    color: black;
+    border-left: 1px solid black;
+}
