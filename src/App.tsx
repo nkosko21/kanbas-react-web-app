@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/"       element={<Navigate to="/Labs"/>} />
           <Route path="/Labs/*" element={<Labs />} />
-          <Route path="/Kanbas" element={<Kanbas />} />
+          <Route path="/Kanbas/*" element={<Kanbas />} />
           <Route path="/Hello"  element={<HelloWorld />} />
           <Route path="/Kanbas/Dashboard" element={<Dashboard />} />
         </Routes>

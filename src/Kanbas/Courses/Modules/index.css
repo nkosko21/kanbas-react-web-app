@@ -1,0 +1,17 @@
+.module-button-reg {
+    background-color: lightgrey;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+.module-button-module {
+    background-color: red;
+    color: white;
+    font-weight: 300;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 3px;
+}
