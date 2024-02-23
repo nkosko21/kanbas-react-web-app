@@ -1,0 +1,46 @@
+.assignments-input {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 3px;
+    border: 1px solid gray;
+}
+
+.assignments-button-reg {
+    background-color: lightgrey;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+.assignments-button-assignments {
+    background-color: red;
+    color: white;
+    font-weight: 300;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+.assignment-list-header {
+    background-color: 'gray';
+    padding: 0;
+    padding-top: 8;
+    border-radius: 0;
+    font-weight: 200;
+}
+
+.assignment-item-header {
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin: 0;
+    width: fit-content;   
+}
