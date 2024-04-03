@@ -36,13 +36,13 @@ function WorkingWithObjects() {
             <button onClick={fetchAssignment} >
                 Fetch Assignment
             </button>
-            <a href={`${API_BASE}/a5/assignment/title`}>
+            <a href={`${API_BASE}a5/assignment/title`}>
                 Get Title
             </a>
 
 
             <h4>Retrieving Objects</h4>
-            <a href={`${API_BASE}/a5/assignment`}>
+            <a href={`${API_BASE}a5/assignment`}>
                 Get Assignment
             </a>
 
