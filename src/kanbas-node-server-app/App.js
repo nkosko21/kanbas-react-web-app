@@ -9,9 +9,9 @@ import ModuleRoutes from "./Kanbas/modules/routes.js";
 const app = express() // creates an express instance
 app.use(cors());
 app.use(express.json());
-// Hello(app)
+Hello(app)
 CourseRoutes(app);
 ModuleRoutes(app);
 
-// Lab5(app)
+Lab5(app)
 app.listen(process.env.PORT || 4000); // listening on localhost:4000
