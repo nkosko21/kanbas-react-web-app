@@ -1,8 +1,8 @@
 import { FaCheckCircle, FaEllipsisV, FaPlus, FaPlusCircle } from "react-icons/fa";
 import './index.css';
-import { assignments } from '../../../kanbas-node-server-app/Kanbas/Database';
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import assignments from "../../../kanbas-node-server-app/Kanbas/Database/assignments";
 
 export default function Assignments() {
     const { courseId } = useParams()

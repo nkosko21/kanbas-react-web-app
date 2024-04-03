@@ -1,20 +1,45 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.tsx";
-import { modules } from "../../../kanbas-node-server-app/Kanbas/Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaPlus } from "react-icons/fa";
 import { useParams } from "react-router";
 import './index.css';
+import * as client from "./client";
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./reducer";
 import { KanbasState } from "../../store";
+import { findModulesForCourse, createModule } from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+  const handleDeleteModule = (moduleId: string) => {
+    client.deleteModule(moduleId).then((status: any) => {
+      dispatch(deleteModule(moduleId));
+    });
+  }
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
 
   const moduleList = useSelector((state: KanbasState) => 
     state.modulesReducer.modules);
@@ -38,16 +63,16 @@ function ModuleList() {
             Edit
           </button>
           <button
-            onClick={() => dispatch(deleteModule(module.name))}
+            onClick={() => handleDeleteModule(module._id)}
           >
             Delete
           </button>
           <button 
-            onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+            onClick={handleAddModule}
           >
             Add
           </button>
-          <button onClick={() => dispatch(updateModule(module))}>
+          <button onClick={handleUpdateModule}>
             Update
           </button>
 

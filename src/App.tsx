@@ -7,8 +7,8 @@ import Kanbas from './Kanbas';
 import { HashRouter } from 'react-router-dom';
 import {Routes, Route, Navigate} from "react-router";
 import Dashboard from './Kanbas/Dashboard';
-import { courses } from "./kanbas-node-server-app/Kanbas/Database";
 import { useState } from "react";
+import courses from './kanbas-node-server-app/Kanbas/Database/courses';
 
 function App() {
   const [coursesVar, setCourses] = useState<any[]>(courses);
