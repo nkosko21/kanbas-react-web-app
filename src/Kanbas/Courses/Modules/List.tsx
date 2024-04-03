@@ -23,10 +23,16 @@ function ModuleList() {
     });
   };
   const handleDeleteModule = (moduleId: string) => {
-    client.deleteModule(moduleId).then((status: any) => {
+    client.deleteModule(moduleId).then((status) => {
       dispatch(deleteModule(moduleId));
     });
-  }
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  };
+
+
   const handleUpdateModule = async () => {
     const status = await client.updateModule(module);
     dispatch(updateModule(module));
@@ -92,7 +98,7 @@ function ModuleList() {
                 Edit
               </button>
               <button
-                onClick={() => dispatch(deleteModule(module._id))}>
+                onClick={() => handleDeleteModule(module._id)}>
                 Delete
               </button>
               <h3>{module.name}</h3>

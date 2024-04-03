@@ -17,7 +17,6 @@ function WorkingWithArrays() {
     };  
     const fetchTodos = async () => {
       const response = await axios.get(API);
-      console.log(response)
       setTodos(response.data);
     };
     const removeTodo = async (todo : any) => {
