@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { courses } from '../Database';
+import { courses } from '../../kanbas-node-server-app/Kanbas/Database';
 import { FaEdit, FaCircle } from "react-icons/fa";
 import './index.css';
 import { Link } from 'react-router-dom';

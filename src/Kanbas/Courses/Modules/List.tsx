@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./index.tsx";
-import { modules } from "../../Database";
+import { modules } from "../../../kanbas-node-server-app/Kanbas/Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaPlus } from "react-icons/fa";
 import { useParams } from "react-router";
 import './index.css';

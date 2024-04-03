@@ -7,7 +7,7 @@ import Kanbas from './Kanbas';
 import { HashRouter } from 'react-router-dom';
 import {Routes, Route, Navigate} from "react-router";
 import Dashboard from './Kanbas/Dashboard';
-import { courses } from "./Kanbas/Database";
+import { courses } from "./kanbas-node-server-app/Kanbas/Database";
 import { useState } from "react";
 
 function App() {

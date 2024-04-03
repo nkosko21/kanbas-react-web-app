@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { modules } from "../../Database";
+import { modules } from "../../../kanbas-node-server-app/Kanbas/Database";
 
 
 const initialState = {
