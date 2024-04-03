@@ -1,4 +1,6 @@
 import EncodingParametersInURLs from '../../kanbas-node-server-app/EncodingParametersInURLs';
+import WorkingWithArrays from './WorkingWithArrays';
+import WorkingWithObjects from './WorkingWithObjects';
 function Assignment5() {
     return (
       <div>
@@ -7,6 +9,8 @@ function Assignment5() {
           Welcome
         </a>
         <EncodingParametersInURLs />
+        <WorkingWithObjects />
+        <WorkingWithArrays />
       </div>
     );
   }
