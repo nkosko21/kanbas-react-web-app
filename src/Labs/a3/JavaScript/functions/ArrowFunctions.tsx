@@ -3,7 +3,6 @@ function ArrowFunctions() {
         return a - b;
     };
     const threeMinusOne = subtract(3, 1);
-    console.log(threeMinusOne);
 
     return (
         <>

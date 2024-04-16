@@ -30,8 +30,8 @@ function WorkingWithArrays() {
       setTodo(response.data);
     };  
     const createTodo = async () => {
-        const response = await axios.get(`${API}/create`);
-        setTodos(response.data);
+      const response = await axios.get(`${API}`);
+      setTodos(response.data);
     };
     const updateTitle = async () => {
       const response = await axios.get(`${API}/${todo.id}/title/${todo.title}`);
@@ -45,9 +45,6 @@ function WorkingWithArrays() {
       const response = await axios.put(`${API}/${todo.id}`, todo);
       setTodos(todos.map((t) => (t.id === todo.id ? todo : t)));
     };
-  
-  
-    
   
     useEffect(() => {
       fetchTodos();

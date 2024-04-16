@@ -57,6 +57,12 @@ const Lab5 = (app) => {
     todo.completed = req.body.completed;
     res.sendStatus(200);
   });
+  app.get("/a5/todos/:id/title/:title", (req, res) => {
+    const {id, title} = req.params;
+    const todo = todos.find((t) => t.id === parseInt(id));
+    todo.title = title;
+    
+  })
 
 
 

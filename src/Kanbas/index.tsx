@@ -3,6 +3,7 @@ import Courses from "./Courses";
 import Dashboard from "./Dashboard";
 import KanbasNavigation from "./Navigation";
 // import { courses } from "../kanbas-node-server-app/Kanbas/Database";
+import Account from "./Account";
 import { useEffect, useState } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
@@ -62,8 +63,8 @@ function Kanbas() {
           <Routes>
             <Route path="Courses/:courseId/*" element={<Courses />} />
             <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="Account" element={<h1>Account</h1>} />
-            {/* <Route path="Dashboard" element={
+            <Route path="/Account/*" element={<Account />} />
+            <Route path="/Dashboard" element={
               <Dashboard
                 courses={courses}
                 course={course}
@@ -73,7 +74,7 @@ function Kanbas() {
                 updateCourse={updateCourse}
               />
               } 
-            /> */}
+            />
           </Routes>
         </div>
       </div>
