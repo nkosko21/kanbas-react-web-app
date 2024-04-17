@@ -1,7 +1,10 @@
 // Data Access Object
 import model from "./model.js";
 
-export const createUser = (user) => model.create(user);
+export const createUser = (user) => {
+  delete user._id; // remove _id field just in case client sends it
+  return model.create(user); // database will create a _id
+}
 export const findAllUsers = () => model.find();
 export const findUserById = (userId) => model.findById(userId);
 export const findUserByUsername = (username) =>  model.findOne({ username: username });
